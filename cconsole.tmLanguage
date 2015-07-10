@@ -106,6 +106,224 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>^((Error)(:)(.*))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.cclog</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^(.*)([0-9]{1})([0-9]{1,3})(\.)([0-9]{1,3})(\.)([0-9]{1,3})(\.)([0-9]{1,3})(.*)(port)([ ])([0-9]{1,5})</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+				<key>10</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+				<key>11</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+				<key>12</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+				<key>13</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.cclog</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.cclog</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.cclog</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>comment.line.cclog</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.cclog</string>
+				</dict>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>comment.line.cclog</string>
+				</dict>
+				<key>7</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.cclog</string>
+				</dict>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>comment.line.cclog</string>
+				</dict>
+				<key>9</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.cclog</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>SSL REDEBUG 1, TCP connected to IP Addresses</string>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^((SSL)(.*))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>SSL REDEBUG Entry 2, lines starting with SSL</string>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^((Cipher list:)(.*))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>SSL REDEBUG Entry 3, Cipher lists</string>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^((Certificate file:)(.*))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>SSL REDEBUG Entry 4, Certificate file</string>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^((Private key file:)(.*))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>SSL REDEBUG Entry 5, Private key file</string>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^((Peer verification)(.*))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>SSL REDEBUG Entry 6, Peer verification</string>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^((Subject:)(.*))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>SSL REDEBUG Entry 7, Subject</string>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^((Issuer:)(.*))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cclog</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>SSL REDEBUG Entry 8, Issuer</string>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^((Verify error)(.*))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.cclog</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>SSL REDEBUG Entry 9, Verify error</string>
+			<key>end</key>
+			<string>$</string>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>^(\*\*\*.*)</string>
 			<key>beginCaptures</key>
 			<dict>
